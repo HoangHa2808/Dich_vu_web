@@ -1,0 +1,65 @@
+LAB 01
+Câu 1. B. requests
+
+The term(Thuật ngữ) Web service (WS) là either a service offered by(dịch vụ được cung cấp bởi) an electronic device to another electronic device(một thiết bị điện tử cho một thiết bị điện tử khác), communicating with each other via the World Wide Web(liên lạc với nhau thông qua World Wide Web), or a server running on a computer device(hoặc máy chủ chạy trên thiết bị máy tính), listening for __requests__ at a particular port over a network(lắng nghe yêu cầu tại một cổng cụ thể trên mạng), serving web documents (HTML, JSON, XML, images) (phục vụ tài liệu web).
+
+Câu 2. D. machine-readable
+
+In a Web service a Web technology such as HTTP (Trong một dịch vụ web, một công nghệ web như HTTP) is used for transferring __machine-readable__ file formats such as XML and JSON(được sử dụng để truyền các định dạng tệp có thể đọc được bằng máy như XML và JSON)
+
+Câu 3. B . Really Simple Syndication
+
+What is the RSS: là một định dạng tập tin thuộc họ XML dùng trong việc chia sẻ tin tức Web (Web syndication) được dùng bởi nhiều website tin tức và weblog. 
+
+LAB 02
+Câu 1. D. layer
+
+The Hypertext Transfer Protocol (HTTP) is an application _____  protocol in the Internet protocol suite model for distributed, collaborative, hypermedia information systems.
+
+Câu 2. B. Request for comments
+
+What does RFC stand for in tech?
+
+Câu 3. B. Request line, Request headers, Blank line, Request bodygr
+
+The format of a request HTTP includes?
+
+Câu 4. A. Status line, Response headers, Blank line, Response body
+
+The format of a response HTTP includes?
+
+Giao thức HTTP là (HyperText Protocol) là giao thức truyền tải siêu văn bản. 
+Gói HTTP gồm 2 loại là: HTTP Request và HTTP Response.
+
+LAB 03
+
+LAB 04
+* XML là (Extensible Markup Language) là ngôn ngữ đánh dấu mở rộng, là ngôn ngữ đánh dấu với mục đích chung, do W3C đề nghị , để tạo ra các ngôn ngữ đánh dấu khác.
+Cú pháp bắt đầu bằng dòng chỉ thị xử lý (processing instruction). CHỉ thị đc đặt trong cặp dấu <? ?>
+
+* JSON là (JavaScript Object Notation) là một kiểu dữ liệu mở trong JavaScript,  là một kiểu định dạng dữ liệu tuân theo một quy luật nhất định mà hầu hết các ngôn ngữ lập trình.
+
+* AJAX là (Asynchronous JavaScript and XML) là một kỹ thuật lập trình web cho phép gửi và nhận dữ liệu từ máy chủ mà không cần làm mới trang web. Giúp tạo ra các trang web tương tác và động, giảm thiểu sự gián đoạn trong trải nghiệm.
+
+Kết hợp giữa JSON và AJAX thường được sử dụng để truyền tải và cập nhật dữ liệu một cách linh hoạt trong ứng dụng web hiện đại.
+
+* XML schema
+Schema nghĩa là lược đồ.
+Schema là một tài liệu được viết dưới dạng XML, được sử dụng để mô tả cấu trúc của một tài liệu XML.
+
+LAB 05
+
+* Promise là một cơ chế trong JavaScript để xử lý các tác vụ bất đồng bộ. Một Promise có thể ở trong một trong ba trạng thái: "pending" (đang chờ), "fulfilled" (hoàn thành), hoặc "rejected" (bị từ chối). 
+
+* async/await là một cú pháp cung cấp một cách đơn giản hóa để làm việc với Promise. async được sử dụng để định nghĩa một hàm bất đồng bộ, và await được sử dụng để đợi một Promise hoặc giá trị khác được trả về từ một Promise.
+
+* fetch là một API trong JavaScript được sử dụng để gửi yêu cầu mạng và nhận phản hồi. Nó là một cách hiện đại hơn và mạnh mẽ hơn so với XMLHttpRequest. Hàm fetch trả về một Promise.
+
+* REST là viết tắt của “REpresentational State Transfer”, tạm dịch: chuyển trạng thái biểu hiện.
+
+* UDDI là viết tắt của “Universal Description, Discovery, Integration”, tạm dịch: Mô tả, khám phá, tích hợp toàn cầu.
+
+* WSDL là viết tắt của “Web Service Description Language”, tạm dịch: Ngôn ngữ mô tả Web Service.
+
+* SOAP là viết tắt của “Simple Object Access Protocol”, tạm dịch: Giao thức truy cập đối phương đơn giản.
+

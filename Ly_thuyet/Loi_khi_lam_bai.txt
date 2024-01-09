@@ -1,0 +1,16 @@
+Lỗi 1:
+Khai báo class ko có (), hàm mới có ()
+
+Lỗi 2:
+Chưa khai báo biến
+
+Lỗi 3:
+Đã dùng console để đổi mật khẩu của root,
+Cách sửa: cập nhật mật khẩu mới đổi vào trong tập tin config.inc.php.
+
+Reset id trong SQL
+SET  @num := 0;
+
+UPDATE your_table SET id = @num := (@num+1);
+
+ALTER TABLE your_table AUTO_INCREMENT =1;

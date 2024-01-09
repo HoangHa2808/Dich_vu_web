@@ -1,0 +1,40 @@
+* HTTP giao thức truyền tải HTML
+* client - server
+ - HTTP Request
+ - API: Application programming interface) là một giao diện mà hệ thống máy tính hay ứng dụng cung cấp để cho phép các yêu cầu dịch vụ có thể được tạo ra từ các chương trình máy tính khác hoặc cho phép dữ liệu có thể được trao đổi qua lại.
+	- Mục đích là cung cấp khả năng truy xuất đến một tập các hàm hay dùng 
+ - JSON: JavaScript Object Notation) là một kiểu dữ liệu mở trong JavaScript. Bao gồm chủ yếu là văn bản, có thể đọc theo dạng cặp "thuộc tính - giá trị".
+	- Ví dụ: 
+{
+	"name" : "Product",
+	"properties":
+	{
+		"id": 
+		{
+		"type":"number",
+		"description":"Product identifier",
+		"required":true
+		},
+		"name":
+		{
+		"description":"Name of the product", 
+            	"type":"string", 
+            	"required":true 
+		},
+	}
+}
+
+* HTTP(RFC): 
+- Cổng mặc định 80
+- hoạt động theo hình thức : tìm và làm
+- Mô hình Client - Server
+- Khởi tạo gói gì(phân tích gói - wireshark)
+- Package
+- data 
+- post
+* Tài nguyên Web:
+
+* XML: Extensible Markup Language là ngôn ngữ đánh dấu mở rộng, có chức năng truyền dữ liệu và mô tả nhiều loại dữ liệu khác nhau.
+
+
+* "Xin lỗi" = lời nói + hành động "sửa lỗi"

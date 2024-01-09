@@ -1,0 +1,15 @@
+- Tổng quan về Web services
+- Hoạt động của web services
+	+ Mô hình client - server
+	+ Giao thức: Tạo ra lỗi, phát hiện ra lỗi
+- Trải nghiệm làm 1 web services
+- XML
+- JSON
+- AJAX
+- JavaScript nâng cao:
+	+ Lập trình bất đồng bộ: là gì, dùng kiểu gì, ưu - nhược điểm, tại sao lại có nó, nó chạy như thế nào.
+	+ C++, C#: lập trình bất đồng bộ như thế nào, là gì
+	+ Cơ chế gọi hàm: gọi hàm như thế nào, ra làm sao, định nghĩa hàm
+- Đọc/hiểu tài liệu tiếng Anh và triển khai
+
+Học tiếng Anh từ 19h30 - 20h30h thứ 7 hàng tuần

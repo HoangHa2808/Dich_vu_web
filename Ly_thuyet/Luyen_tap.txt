@@ -1,0 +1,78 @@
+WebPack: dấu phẩy đứng ở đầu
+Đệ quy là một hàm gọi lại chính hàm đó
+let i = 0
+;(function myFunc(){
+	i++
+	console.log(i)
+	if(i<10)
+	myFunc()
+})()
+Javascript nâng cao:
+- Javascript là ngôn ngữ chạy một luồng duy nhất hay đơn luồng
+- Sự kiện trong Javascript đã giải quyết vấn đề đa luồng, một hành động sẽ xảy ra khi một sự kiện được kích hoạt.
+Hàm: Hàm trong javascript được coi là first-class objects, điều này có nghĩa hàm là một object nên ta có thể sử dụng nó giống như các object bình thường khác.
++ Closure là một hàm được tạo ra từ bên trong một hàm khác, nó có thể sử dụng các biến toàn cục, biến cục bộ của hàm cha và biến cục bộ của chính nó.
+	Các biến bên trong hàm sẽ kết thúc khi hàm đó được chạy xong.
+	Closure có thẻ sử dụng biến cục bộ, biến hàm cha và biến trong chính hàm đó.
++ IIFE là Immediately Invoked Function Expression có nghĩa là khởi tạo một function và thực thi nó ngay lập tức -> không có tính sử dụng lại
+* Cú pháp :
+	(function(){
+ 	//code here
+	})();
+Vậy tại sao lại dùng IIFE? Bởi vì IIFE như là một cái hộp đóng gói code của chính nó. Do đó, những biến trong hộp này là private, bên ngoài(global) không thể truy xuất hay thay đổi được. Và nếu vô tình bạn đặt tên biến giống với global thì cũng không bị ảnh hưởng bên ngoài. 
+	- Hàm 'private': riêng tư:
+	;(function myFunc(){
+		console.log('NOW')
+	})()
+	- Ví dụ:
+	const app= {
+	cars: []
+	app(car {
+	this.car.push(car)
+	},
+	edit(index, car){
+	this.car[index] = car
+	},
+	delete(index){
+	this.car.splice(index,1)
+	}
+	}
+
+const app = (function(){
+const cars = []
+return{
+get(index){
+return cars[index]
+},
+add(car){
+cars.push(car)
+},
+edit(index, car){
+cars[index] = car
+},
+delete(index){
+cars.splice(index,1)
+},
+}
+)
+
+Scope: là phạm vi của biến, nơi mà biến tồn tại, hay nói chính xác hơn đó là nơi mà biến sinh ra và chết đi, và chỉ những chương trình nằm trong phạm vi đó mới sử dụng được biến.
+
+* Callback: là một hàm sẽ được gọi bởi một hàm khác.
+- Cách hoạt động: thực hiện gọi lại thông qua hàm
+- Nguyên tắc khi thực hiện: 
+	+ Phải chắc chắn tham số truyền vào là một function bởi nếu không phải là một #function thì không thể thực thi được: để kiểm tra 1 biến có phải là function hay không thì sử dụng hàm typeof, nếu typeof có gt là 'function' thì đó là 1 function
+	+ Cẩn thận với 'this' khi hàm callback nằm trong object: Hàm được xây dựng trong Object là hàm được định nghĩa thông qua key của object và giá trị của key là một hàm. Theo đúng nguyên tắc thì hàm callback là một hàm đơn phương nên khi sử dụng từ khóa 'this' trong hàm thì nó sẽ hiểu 'this' lúc này chính là đối tượng Window Object, vì vậy cho dù định nghĩa hàm callback nằm trong một object thì không thể truy cập đến dữ liệu của object thông qua từ khóa this.
+	+ Khắc phục 'this' khi hàm callback nằm trong object: sử dụng phương thức apply của hàm callback. Cú pháp: 
+		// Trước đây
+		callback(var1, var2, ...);
+ 
+		// Bây giờ
+		callback.apply(callbackObject, [var1, var2, ... ]);
+	- Hàm call() dùng để thực thi một hàm nào đó với các tham số truyền vào (nếu có), hàm này được tích hợp sẵn trong các đối tượng là function.
+	- Hàm apply có công dụng giống như hàm call, tuy nhiên về cú pháp thì có một chút khác biệt như sau:
+		+ Tham số đầu tiên của hàm call() là đối tượng this, tiếp theo chính là các tham số của hàm cần gọi.
+		+ Tham số đầu tiên của hàm apply() là đối tượng this, tham số tiếp theo là một mảng chứa các tham số của hàm cần gọi.
+Nếu sử dụng cú pháp này thì từ khóa this sẽ trỏ tới đối tượng callbackObject chứ không phải là window object. Có thể sử dụng phương thức call để thay thế cho apply.
+	+ Multiple Callback Functions: Có thể tạo ra một hàm có nhiều callback function bằng cách tạo ra nhiều tham số và mỗi tham số là một callback function.
+* Promise: một package
